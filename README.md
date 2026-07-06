@@ -10,14 +10,14 @@ This GCP Data Engineering project focuses on developing a robust ETL (Extract, T
 
 These technologies work together to efficiently process, store, and generate reports on the daily transaction data.
 
-![GCP-Diagram](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/f3a7ff86-92b3-46db-a156-e5ebbefc3bb9)
+![GCP-Diagram](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289177254-f3a7ff86-92b3-46db-a156-e5ebbefc3bb9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T201152Z&X-Amz-Expires=300&X-Amz-Signature=7f468954766df3e7ce10497cba0b489362d9fe735615fb3b20d229e901795032&X-Amz-SignedHeaders=host&response-content-type=image%2Fjpeg)
 
 
-# <img width="30" alt="image" src="https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/6b5ffddf-0f74-41cf-8303-22f675cabdda"> GCS
+# <img width="30" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289162032-6b5ffddf-0f74-41cf-8303-22f675cabdda.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T201028Z&X-Amz-Expires=300&X-Amz-Signature=b34c3817fc897771242fe8da28d9756dd12f0e8772804a9d88da99e62e25704a&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng"> GCS
 
 Upload the provided CSV file to your designated Google Cloud Storage (GCS) bucket. This transactional data represents a sample of real-world cases from the online food delivery industry. It includes information such as customer ID, date, time, order ID, items ordered, transaction amount, payment mode, restaurant name, order status, customer ratings, and feedback. The data showcases various scenarios, including late delivery, stale food, and complicated ordering procedures, providing valuable insights into different aspects of the customer experience.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-project-food-orders-etl/assets/83917694/285dcfd6-f212-418b-b5bc-e56beb35fa52)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/288459370-285dcfd6-f212-418b-b5bc-e56beb35fa52.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200951Z&X-Amz-Expires=300&X-Amz-Signature=399a5577db5c9748c64f61ec1b2fbf23df68111410fb461f295f4cdb268cb724&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 
@@ -49,18 +49,18 @@ Give the Beam code a test run in the shell and then check the results in BigQuer
 ❗  Make sure that all your files and services are in the same location. E.g. both buckets should be in the same location or you will get a similar error message: 'Cannot read and write in different locations: source: US, destination: EU’
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/5f26e09a-3b98-4848-9413-097a49a84bd6)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/288848439-5f26e09a-3b98-4848-9413-097a49a84bd6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200851Z&X-Amz-Expires=300&X-Amz-Signature=be9cda2d17ed503988973a134b0d64fdae53c40e2ef933ac911500eb2ea6e5b9&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/8d18241f-4ede-431e-b123-744ed9470f0c)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/288849459-8d18241f-4ede-431e-b123-744ed9470f0c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200823Z&X-Amz-Expires=300&X-Amz-Signature=67fbcace479a4a8ff1c38314fe17ad3d71ff7a5f9cb410c65eae5bfa73728823&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 To avoid any confusion, it is recommended to delete the dataset before moving forward with actions that involve appending data in BigQuery.
 
 
 
 
-# <img width="40" alt="image" src="https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/c1d5bfc6-94c3-44e4-b38e-4eaf5656a840"> Composer/Airflow
+# <img width="40" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289163063-c1d5bfc6-94c3-44e4-b38e-4eaf5656a840.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200756Z&X-Amz-Expires=300&X-Amz-Signature=9a2ee3210e7c42bd20c3abda11368534dfd90379cda3c375dccac6392a743385&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng"> Composer/Airflow
 
 📖
 
@@ -82,7 +82,7 @@ Enable Cloud Composer API, Dataflow API: `gcloud services enable composer.google
 
 To proceed, create a Composer 1 environment.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/f5f7d40b-67fe-4206-9501-92b042c950f7)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289275655-f5f7d40b-67fe-4206-9501-92b042c950f7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200604Z&X-Amz-Expires=300&X-Amz-Signature=d372340f323e37642d9eec6225dba0bfc6b250a113e39a0e63460e386458e709&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
  - Select n1-standard-1 (1 vCPU, 3.75 GB RAM)
@@ -93,31 +93,31 @@ To proceed, create a Composer 1 environment.
 
 Creating a Composer 1 environment typically takes around 15 minutes. If the creation process fails, you may want to consider trying a different zone.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/a9bb70e4-0cef-4290-ba6a-c81e587046f9)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289275675-a9bb70e4-0cef-4290-ba6a-c81e587046f9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200542Z&X-Amz-Expires=300&X-Amz-Signature=0f131b632abfad34e4e78e5b5e47bd888fa2a129c2ccd4edd4f473b027be1425&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 The same `beam.py`, tested in the shell, can be used for both Composer 1 and Composer 2. 
 
 Upload the `beam.py` code to the Composer bucket.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/4fe512ed-489a-4955-b289-89d72be61dcf)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289275692-4fe512ed-489a-4955-b289-89d72be61dcf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200451Z&X-Amz-Expires=300&X-Amz-Signature=4e3c36072da657661d0394d3eb466eefb15f1f15b283f55487503e968cf6ac06&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 Go to the object details, copy `gsutil URI` and paste it in the DAG file (`py_file`).
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/593511d3-fde2-4704-8c3e-030037802419)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289275723-593511d3-fde2-4704-8c3e-030037802419.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200421Z&X-Amz-Expires=300&X-Amz-Signature=051ca3734a8c193aa062244ce03b9ad71599cb89d81f5ecf8e0499bacd43379f&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/8601ea31-2c88-42d6-9441-bf5576b0e19e)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289301938-8601ea31-2c88-42d6-9441-bf5576b0e19e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200352Z&X-Amz-Expires=300&X-Amz-Signature=cd1ef30e1ebeb314d4a3fbd463fb37443cb69be6af613a330f5f51fd3e7d86fd&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 Upload `airflow.py` file to the dags folder.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/91ef65c4-37de-42b4-85be-85187a4db78c)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289302288-91ef65c4-37de-42b4-85be-85187a4db78c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200326Z&X-Amz-Expires=300&X-Amz-Signature=b4e1ed32a9d5c69750106a5dc32d4acc5165662c48fa2be59b590ffb69f535c7&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 After a few minutes, the DAG will appear in the Airflow UI. For testing purposes, the DAG is initially scheduled to run every 10 minutes. However, you have the flexibility to modify the schedule according to your specific requirements. Wait for the scheduled run to occur automatically or manually trigger the DAG.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/52cfa6e7-e577-412c-963c-2861dc2eb4cf)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289302406-52cfa6e7-e577-412c-963c-2861dc2eb4cf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200251Z&X-Amz-Expires=300&X-Amz-Signature=30d5893f16844ac97214d5163e5aba642c4414deb512e3eeddff875b03596d9d&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/e671c5ef-ed4c-470d-b96a-636119e9b847)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289302551-e671c5ef-ed4c-470d-b96a-636119e9b847.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200220Z&X-Amz-Expires=300&X-Amz-Signature=512919283f02178d94eed10b82ef9ed96ca829d3599134ca3d751c8ba2982239&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 To gain a better understanding of the process, review the logs of each individual task. 
 
@@ -125,45 +125,45 @@ To gain a better understanding of the process, review the logs of each individua
 
 Sensor checks existence of objects: food-orders-us, food_daily. Success criteria met. Sensor found the file in the bucket.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/378cd73f-d29c-43d4-9d3f-3e5cf3c754d9)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289303033-378cd73f-d29c-43d4-9d3f-3e5cf3c754d9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200157Z&X-Amz-Expires=300&X-Amz-Signature=50698610a63424310a41952b0bd7e73d85d718cf2d04beb0eacc39030680f6ac&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 ### 🚀 list_files
 
 Object food_daily.csv in bucket food-orders-us copied to object processed/food_daily.csv in bucket food-orders-us. Blob food_daily.csv deleted.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/f1689521-8ce8-4444-b2f1-83677a6d1ac9)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289303140-f1689521-8ce8-4444-b2f1-83677a6d1ac9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200122Z&X-Amz-Expires=300&X-Amz-Signature=6e7a79814825c9286f3f1a104634a965bd82e49646de2b9a7895a7566e98bedd&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 Folder created.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/9451caf3-61db-4612-915f-0e3938bef965)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289303235-9451caf3-61db-4612-915f-0e3938bef965.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200101Z&X-Amz-Expires=300&X-Amz-Signature=87d3f4b8b4543f2bd4b40a317bc145f575fec150e0bbeb2184b06cc4fca0cbf7&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 ### 🚀 beamtask
 
 The Dataflow job has just started.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/03784888-c23d-43ae-9b15-f3383dd984fe)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289303513-03784888-c23d-43ae-9b15-f3383dd984fe.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T200026Z&X-Amz-Expires=300&X-Amz-Signature=4423bbf00e343ec26ecde1a8dd0df3ccb6730cb664281ed1398dc5d0b6964332&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 Check the completed tasks in Dataflow.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/922be238-59f7-413e-9415-f6cda9b772f5)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289303579-922be238-59f7-413e-9415-f6cda9b772f5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T195955Z&X-Amz-Expires=300&X-Amz-Signature=23d89ad6dd1678e99cfeb1423bdda87f3dc567f425aea31a3fb23e42d65f3d48&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/cef67aea-f2ce-4d7a-8047-5a46cc237758)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289303648-cef67aea-f2ce-4d7a-8047-5a46cc237758.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T195924Z&X-Amz-Expires=300&X-Amz-Signature=80ac3e987b88243309e3b05e9dd7839a5a3c1aa8faa6f80c99fae9e51b113d97&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 Open BigQuery to see the results.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/eebb4d73-6332-4a90-8798-e81cc5b2f628)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289303774-eebb4d73-6332-4a90-8798-e81cc5b2f628.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T195849Z&X-Amz-Expires=300&X-Amz-Signature=26841697ba0db73977b81a0c8671a4b0de6463913596e3e1b455e3f45c5b4e92&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 In practice, files often come with timestamps. As a test, I have uploaded a new file to the bucket to verify if the solution is functioning correctly.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/6a16b07e-7bc3-4522-9fb6-ff94347ffa63)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289304513-6a16b07e-7bc3-4522-9fb6-ff94347ffa63.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T195708Z&X-Amz-Expires=300&X-Amz-Signature=16a7d49e7a5f2943afd8992854ea59baf7fdc81da63a1ba6df4c83062d7cb24f&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 The solution performed as expected. The new file was successfully copied to the 'processed' folder, and the same process was repeated. The resulting transformed data will be appended to the existing tables in BigQuery.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/a4d449d0-35ec-42dc-b6b6-c08e91934b95)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289304129-a4d449d0-35ec-42dc-b6b6-c08e91934b95.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T195634Z&X-Amz-Expires=300&X-Amz-Signature=045b2c185f564bd95bb1b4b806a295977ad9f3d778b27a2c0101d4ba5e5599e6&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/12d734e3-d0ae-44ff-9bd6-f1e8b27859e1)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289304268-12d734e3-d0ae-44ff-9bd6-f1e8b27859e1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T195607Z&X-Amz-Expires=300&X-Amz-Signature=984ab81b610d8b26814ad4c1a19a3501065a8dfe8770db99b967a9d3944177b5&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 The values can be accessed and retrieved from XComs.
 
