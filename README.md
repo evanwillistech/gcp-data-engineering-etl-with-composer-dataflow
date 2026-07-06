@@ -224,11 +224,11 @@ Operators will be visible in the Graph section.
 
 Since it is scheduled to run '@daily' this time, I manually triggered it.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/4b889475-d7ab-4c62-81eb-97f153b2bb91)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386866-4b889475-d7ab-4c62-81eb-97f153b2bb91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T193232Z&X-Amz-Expires=300&X-Amz-Signature=ba01be4a3b57cdbbe72d4e400e1ecacab95a14ae280e375349caefd753370f80&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 Open Dataflow to check if the job is currently running.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/4fe108f0-ddce-458e-83fa-159a4860f186)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386894-4fe108f0-ddce-458e-83fa-159a4860f186.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T193315Z&X-Amz-Expires=300&X-Amz-Signature=5631976018a11e0e80de018b2c9fd4b567303ce33877916fb20e513ba0876a0e&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 As expected, the Dataflow job will create 2 tables in BigQuery. 👏🎉
 
@@ -240,4 +240,4 @@ As expected, the Dataflow job will create 2 tables in BigQuery. 👏🎉
 Connect to your Looker account: https://lookerstudio.google.com. Select BQ connection.
 Create your own daily report, use delivered/other_status_orders tables. Here is my example
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/ebca078f-f231-4f86-9938-c0cf026c0c97)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/288892124-ebca078f-f231-4f86-9938-c0cf026c0c97.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T193431Z&X-Amz-Expires=300&X-Amz-Signature=053fdbed2f4a6e369f55a9a2094fff7a3ca71b628f317d43ffff6fa62887d61f&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
