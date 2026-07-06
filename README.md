@@ -167,7 +167,7 @@ The solution performed as expected. The new file was successfully copied to the 
 
 The values can be accessed and retrieved from XComs.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/1e26c216-0a18-475d-98eb-367883d7469a)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289304361-1e26c216-0a18-475d-98eb-367883d7469a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194608Z&X-Amz-Expires=300&X-Amz-Signature=57367dede72e88e80ff225a284230b51baa1f5398f6e4e10ed3088a266624015&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 
@@ -178,30 +178,30 @@ Let's move to Composer 2. Create a Composer 2 environment.
 The DAGs feature two operators: [DataflowCreatePythonJobOperator](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/_api/airflow/providers/google/cloud/operators/dataflow/index.html#airflow.providers.google.cloud.operators.dataflow.DataflowCreatePythonJobOperator) and [BeamRunPythonPipelineOperator](https://airflow.apache.org/docs/apache-airflow-providers-apache-beam/stable/operators.html#python-pipelines-with-dataflowrunner). While the former is deprecated and no longer actively maintained, it is still available and functional. Although it is recommended to use the Beam operator for improved functionality and ongoing support, you can still try the deprecated operator.
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/9d918734-cd98-49eb-a973-586d6178d341)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289351349-9d918734-cd98-49eb-a973-586d6178d341.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194533Z&X-Amz-Expires=300&X-Amz-Signature=1c2d856a539c871064e09b77c9f2e49cdf156e661b922ffdea4b4152fa93c111&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 ❗ It's important to give `Cloud Composer v2 API Service Agent Extension` role to your Service Account.
 
 Select Environment size: Small.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/64581910-e4e2-4196-8812-4478a5af0739)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386394-64581910-e4e2-4196-8812-4478a5af0739.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194431Z&X-Amz-Expires=300&X-Amz-Signature=f1b6343f007ac9fd54c76d1df24c51789daed18407d8139b7733912a29a4916e&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 
 The rest is the same, upload CSV file to the bucket, add Beam code to the Composer bucket, copy `gsutil URl` link and add it to the DAG.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/a7198bbd-db3c-49b3-b8d8-dd7b6e50d690)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386469-a7198bbd-db3c-49b3-b8d8-dd7b6e50d690.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194159Z&X-Amz-Expires=300&X-Amz-Signature=67c3779a38e4264b15ace88f0226dcc8f8ee1786eb66e90ea29eb04f4b76a0d4&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/22293adc-98b2-42ba-932e-e565867b7862)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386524-22293adc-98b2-42ba-932e-e565867b7862.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194226Z&X-Amz-Expires=300&X-Amz-Signature=5f1c7a405df1470703a973c1b6c5e29a67003f9a85d038987090c82331ac8736&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/c4c5018d-7eb3-448e-875c-7c975c1200a9)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386563-c4c5018d-7eb3-448e-875c-7c975c1200a9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194257Z&X-Amz-Expires=300&X-Amz-Signature=93daae52b64b8f4755427ba384e3143af7f4d94a0f87e1d0ba134c31e570104e&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/f28d8fa7-84f1-4e0a-8184-575aeb9e2ece)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386333-f28d8fa7-84f1-4e0a-8184-575aeb9e2ece.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194328Z&X-Amz-Expires=300&X-Amz-Signature=a0ad8af38010bbdff6151886c90c823d8207c61734bdc276485ef01b519ab512&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 
@@ -211,14 +211,14 @@ Upload `airflow2.py` code to the dags folder (with DataflowCreatePythonJobOperat
 
 Wait for the DAG to appear in the Airflow UI.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow/assets/83917694/2867c0f1-922e-48c8-a657-7563a9afbdcb)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289386855-2867c0f1-922e-48c8-a657-7563a9afbdcb.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194126Z&X-Amz-Expires=300&X-Amz-Signature=50aef8c707f3f47a5428d398cd04b45acbd8b6b90ee2e8a04fa78fd132c32488&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 Operators will be visible in the Graph section.
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow-TEST/assets/83917694/1e6cc0bb-28a2-497c-be2d-a73a27a99d9b)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289813523-1e6cc0bb-28a2-497c-be2d-a73a27a99d9b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T194045Z&X-Amz-Expires=300&X-Amz-Signature=ac2ee9dc2d026ec56c741d48dd80566ca9c1547e0e3e4e1ee3bd332f191e2b7e&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
-![image](https://github.com/evanwillistech/gcp-data-engineering-etl-with-composer-dataflow-TEST/assets/83917694/42c60726-f7da-4e0c-8d88-161a69e4fc69)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/83917694/289813658-42c60726-f7da-4e0c-8d88-161a69e4fc69.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260706T193959Z&X-Amz-Expires=300&X-Amz-Signature=c0b7bddfc85f33e24e525e7a98054581c36373cded8ba6eeaae219e7571415fe&X-Amz-SignedHeaders=host&response-content-type=image%2Fpng)
 
 
 
